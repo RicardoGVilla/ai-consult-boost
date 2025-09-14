@@ -9,38 +9,32 @@ export const WhyChooseUs = () => {
         <div className="space-y-12">
           <div>
             <h3 className="text-xl md:text-2xl font-bold text-foreground mb-4">
-              Real-World Experience
+              Real-World Perspective
             </h3>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Unlike pure tech consultants, I bring operational experience from supply chain management. 
-              I understand how businesses actually work, not just how technology works.
+            Years of experience in transportation and logistics, including hands-on exposure to sales, operations, and software. This breadth of experience provides insight into how different areas of your business interact and where processes can be optimized through software and modern automation solutions.
             </p>
           </div>
           
           <div>
             <h3 className="text-xl md:text-2xl font-bold text-foreground mb-4">
-              Technical Excellence
+              Modern Technical Expertise
             </h3>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Proficient in modern programming languages and automation platforms. I build solutions 
-              that are robust, scalable, and maintainable.
-            </p>
+            Professional experience and training in traditional software development—writing maintainable, scalable, and robust code—combined with expertise in modern automation tools, including no-code and low-code platforms, to streamline workflows and reduce repetitive tasks.            </p>
           </div>
           
           <div>
             <h3 className="text-xl md:text-2xl font-bold text-foreground mb-4">
-              Proven Results
+              Proven Impact
             </h3>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Track record of delivering automation solutions that genuinely improve efficiency, 
-              reduce costs, and eliminate operational bottlenecks.
-            </p>
+            Consistently delivering automation solutions that simplify processes, connect systems, and improve efficiency across logistics, operations, and internal workflows for small and medium businesses in e-commerce, import/export, catering, marketing, and more.            </p>
           </div>
           
           <div className="pt-8 border-t border-border">
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              <span className="font-bold text-foreground">Say goodbye to</span> manual data entry, 
-              repetitive tasks, disconnected systems, and time-consuming processes that slow your team down.
+              <span className="font-bold text-foreground"> Eliminate</span> manual tasks, streamline disconnected systems, and reduce time-consuming processes, freeing up your team to focus on higher-value work
             </p>
           </div>
         </div>

@@ -9,7 +9,6 @@ export const Hero = () => {
       <header className="p-6">
         <nav className="flex justify-between items-center max-w-6xl mx-auto">
           <div className="flex items-center space-x-3">
-            <Bot className="h-8 w-8 text-foreground" />
             <span className="text-xl font-bold text-foreground">AI-Automate</span>
           </div>
           <ThemeToggle />
@@ -23,7 +22,7 @@ export const Hero = () => {
             <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-foreground leading-none tracking-tight">
               AI
               <br />
-              Automation
+              Automate
               <br />
               Agency
             </h1>
