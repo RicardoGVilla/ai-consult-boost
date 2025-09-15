@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Bot } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
 export const Hero = () => {
@@ -34,11 +33,11 @@ export const Hero = () => {
             </div>
             
             <div className="pt-8">
-              <Button 
+              <Button asChild
                 size="lg" 
                 className="bg-foreground text-background hover:bg-foreground/90"
               >
-                Get Started
+                <a href="#contact">Book A Consultation</a>
               </Button>
             </div>
           </div>

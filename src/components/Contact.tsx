@@ -1,11 +1,39 @@
+import { useState } from "react";
+import { InlineWidget } from "react-calendly";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { toast } from "sonner";
 
 export const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const netlifyFormData = new FormData(e.currentTarget);
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(netlifyFormData as any).toString(),
+    })
+      .then(() => {
+        toast.success("Message sent successfully!");
+        setFormData({ name: "", email: "", message: "" });
+      })
+      .catch((error) => toast.error("An error occurred. Please try again."));
+  };
+
   return (
-    <section className="py-24 px-6">
+    <section id="contact" className="py-24 px-6">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl md:text-6xl font-bold text-foreground mb-16">
           Contact
@@ -17,13 +45,23 @@ export const Contact = () => {
               Let's discuss your automation needs
             </h3>
             
-            <form className="space-y-6">
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              onSubmit={handleSubmit}
+              className="space-y-6"
+            >
+              <input type="hidden" name="form-name" value="contact" />
               <div>
                 <Label htmlFor="name" className="text-foreground">Name</Label>
                 <Input 
                   id="name" 
+                  name="name"
                   className="mt-2 bg-background border-border" 
                   placeholder="Your name" 
+                  value={formData.name}
+                  onChange={handleChange}
                 />
               </div>
               
@@ -31,9 +69,12 @@ export const Contact = () => {
                 <Label htmlFor="email" className="text-foreground">Email</Label>
                 <Input 
                   id="email" 
+                  name="email"
                   type="email" 
                   className="mt-2 bg-background border-border" 
                   placeholder="your@email.com" 
+                  value={formData.email}
+                  onChange={handleChange}
                 />
               </div>
               
@@ -41,8 +82,11 @@ export const Contact = () => {
                 <Label htmlFor="message" className="text-foreground">Message</Label>
                 <Textarea 
                   id="message" 
+                  name="message"
                   className="mt-2 bg-background border-border min-h-[120px]" 
                   placeholder="Tell me about your automation challenges..."
+                  value={formData.message}
+                  onChange={handleChange}
                 />
               </div>
               
@@ -62,15 +106,13 @@ export const Contact = () => {
             </div>
             
             <div>
-              <h4 className="font-bold text-foreground mb-2">Response Time</h4>
-              <p className="text-muted-foreground">Within 24 hours</p>
-            </div>
-            
-            <div>
-              <h4 className="font-bold text-foreground mb-2">Free Consultation</h4>
-              <p className="text-muted-foreground">
-                30-minute strategy call to discuss your automation opportunities
-              </p>
+              <h4 className="font-bold text-foreground mb-4">Book a Free Consultation</h4>
+              <div className="rounded-lg overflow-hidden">
+                {/* 
+                  IMPORTANT: Replace the URL below with your actual Calendly event link.
+                */}
+                <InlineWidget url="https://calendly.com/ricardorgvillanueva/free-consultation-ai-automate" />
+              </div>
             </div>
           </div>
         </div>
