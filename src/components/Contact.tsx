@@ -61,6 +61,7 @@ export const Contact = () => {
             <form
               name="contact"
               method="POST"
+              action="/"
               data-netlify="true"
               onSubmit={handleSubmit}
               className="space-y-6"
@@ -81,6 +82,7 @@ export const Contact = () => {
                   placeholder="Your name" 
                   value={formData.name}
                   onChange={handleChange}
+                  required
                 />
               </div>
               
@@ -94,6 +96,7 @@ export const Contact = () => {
                   placeholder="your@email.com" 
                   value={formData.email}
                   onChange={handleChange}
+                  required
                 />
               </div>
               
@@ -106,6 +109,7 @@ export const Contact = () => {
                   placeholder="Tell me about your automation challenges..."
                   value={formData.message}
                   onChange={handleChange}
+                  required
                 />
               </div>
               
