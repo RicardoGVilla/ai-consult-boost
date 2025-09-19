@@ -22,10 +22,11 @@ export const Contact = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    const netlifyFormData = new FormData(e.currentTarget);
+    const form = e.currentTarget;
+    const netlifyFormData = new FormData(form);
 
     try {
-      const response = await fetch("/", {
+      const response = await fetch(form.action, {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(
