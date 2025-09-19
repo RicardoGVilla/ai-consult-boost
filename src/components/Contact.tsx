@@ -29,9 +29,7 @@ export const Contact = () => {
       const response = await fetch(form.action, {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(
-          Object.fromEntries(netlifyFormData) as Record<string, string>
-        ).toString(),
+        body: new URLSearchParams(netlifyFormData as any).toString(),
       });
 
       if (!response.ok) {
