@@ -4,22 +4,25 @@ import { Bot, Workflow, Zap } from "lucide-react";
 export const Services = () => {
   const services = [
     {
-      title: "AI Development",
-      description: "Crafting intelligent solutions for small to medium-sized businesses, including custom chatbots, AI tools, and seamless integrations. These solutions drive growth, optimize processes, and enhance communication, elevating your business impact."
+      title: "Workflow Automations",
+      description: "Save time and reduce errors by automating repetitive tasks, letting your team focus on what truly matters. Automate welcome emails, follow-up reminders, and client data transfer from website forms to your CRM. Sync information across apps like email, spreadsheets, and project management tools for seamless operations."
     },
     {
-      title: "Lead Generation",
-      description: "AI-powered lead generation solutions that help businesses acquire and manage leads efficiently. By leveraging custom chatbots and personalized integrations, the lead process is streamlined, allowing more focus on growth and client success."
+      title: "Digital Presence Creation",
+      description: "Build a strong online presence that highlights your brand and attracts the right clients. Whether it’s a landing page, online portfolio, or a full website, we create responsive, user-friendly sites designed to integrate with automation tools and online services."
     },
     {
-      title: "System Integration",
-      description: "Seamlessly connecting tools, apps, and platforms through API integrations, data synchronization, and custom workflows. Ensures the tech stack works as a unified system, improving efficiency and reducing manual work."
+      title: "Chatbot & Website Integration",
+      description: "Enhance your website with an intelligent chatbot that engages visitors, answers questions, and captures leads automatically. Provide instant support 24/7 and gather information from potential clients without manual effort."
     },
     {
-      title: "Data & Reporting Automation",
-      description: "Transforming raw data into actionable insights with automated reporting. Data collection, aggregation, and visualization are streamlined, helping businesses track performance, make informed decisions, and focus on strategic growth."
-    }
-       
+      title: "Appointment Scheduling",
+      description: "Simplify your booking process with a dedicated appointment scheduling system. Clients can book directly online, sync with your calendar, receive confirmations, and get automated reminders, reducing no-shows and saving you time."
+    },
+    {
+      title: "Billing & Payments",
+      description: "Simplify your financial operations with automated billing and payment solutions. Generate invoices, accept credit cards or e-transfers, set up recurring subscriptions, and send payment reminders—all integrated with your existing systems to keep finances organized and reduce manual work."
+    }      
   ];
 
   return (

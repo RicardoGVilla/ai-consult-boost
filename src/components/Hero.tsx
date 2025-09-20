@@ -37,7 +37,7 @@ export const Hero = () => {
                 size="lg" 
                 className="bg-foreground text-background hover:bg-foreground/90"
               >
-                <a href="#contact">Book A Consultation</a>
+                <a href="#contact">Let’s Talk!</a>
               </Button>
             </div>
           </div>
