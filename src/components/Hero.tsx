@@ -26,6 +26,10 @@ export const Hero = () => {
               Agency
             </h1>
             
+            <p className="text-2xl md:text-3xl text-muted-foreground max-w-2xl">
+              Automations for Small Businesses
+            </p>
+            
             <div className="space-y-4 text-xl md:text-2xl text-muted-foreground max-w-2xl">
               <p><span className="font-bold text-foreground">optimize</span> processes</p>
               <p><span className="font-bold text-foreground">automate</span> workflows</p>
