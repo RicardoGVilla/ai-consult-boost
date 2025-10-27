@@ -134,7 +134,8 @@ export const Contact = () => {
           <div className="space-y-8">
             <div>
               <h4 className="font-bold text-foreground mb-2">Email</h4>
-              <p className="text-muted-foreground">hello@ai-automate.com</p>
+              <p className="text-muted-foreground">ricardorgvillanueva@efficiencore.com
+</p>
             </div>
             
             <div>

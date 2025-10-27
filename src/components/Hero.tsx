@@ -27,7 +27,7 @@ export const Hero = () => {
             </h1>
             
             <div className="space-y-4 text-xl md:text-2xl text-muted-foreground max-w-2xl">
-              <p><span className="font-bold text-foreground">optimise</span> processes</p>
+              <p><span className="font-bold text-foreground">optimize</span> processes</p>
               <p><span className="font-bold text-foreground">automate</span> workflows</p>
               <p><span className="font-bold text-foreground">elevate</span> businesses</p>
             </div>
