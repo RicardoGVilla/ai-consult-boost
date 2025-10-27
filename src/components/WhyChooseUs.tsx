@@ -12,7 +12,7 @@ export const WhyChooseUs = () => {
               Efficiency Driven
             </h3>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-            Our mission is to leverage years of process experience to help small and medium businesses simplify manual, error-prone tasks through software and automation.            </p>
+            Our mission is to leverage years of automation experience to help small and medium businesses simplify manual, error-prone tasks through software and automation.            </p>
           </div>
           
           <div>
@@ -29,6 +29,15 @@ export const WhyChooseUs = () => {
             </h3>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
             We aim to deliver solutions that create meaningful impact for your business. By simplifying processes, integrating systems, and improving efficiency in logistics, operations, and accounting, we help small and medium businesses reduce errors and unnecessary costs.           </p>
+          </div>
+          
+          <div>
+            <h3 className="text-xl md:text-2xl font-bold text-foreground mb-4">
+              Cost-Efficient
+            </h3>
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+            Through strategic partnerships with skilled professionals in Latin America, we deliver high-quality web development and automation solutions at a fraction of the typical cost, helping small and medium businesses maximize efficiency without overextending their budget.
+            </p>
           </div>
           
         
